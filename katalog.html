@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная</title>
-  <!-- Подключение Bootstrap -->
+  <title>Каталог</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-  <!-- Подключение Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style/katalog.css">
 </head>
@@ -38,10 +36,8 @@
             <a class="nav-link" href="#stock-section">В наличии</a>
           </li>
         </ul>
-        <!-- Иконка корзины -->
         <a id="cart-icon" class="nav-link position-relative" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
           <i class="bi bi-cart fs-3"></i>
-          <!-- Значок количества товаров в корзине -->
           <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
             0
           </span>
@@ -50,7 +46,6 @@
     </div>
   </nav>
 
-  <!-- Модальное окно корзины -->
   <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -60,7 +55,6 @@
         </div>
         <div class="modal-body">
           <div id="cart-items">
-            <!-- Здесь будут отображаться товары из корзины -->
           </div>
           <div class="d-flex justify-content-between mt-3">
             <h5>Итого:</h5>
@@ -78,14 +72,12 @@
   <div class="container mt-5 pt-5">
     <h1 class="text-center text-muted fs-2 p-5" id="new-section">Новинки</h1>
     <div class="row">
-      <!-- Пример товара -->
       <div class="col-xs-6 col-md-4">
         <div class="product thumbnail">
           <a href="#"><img src="media/1.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
           <div class="caption">
-            <h6><a href="#">Кружка главная </a></h6>
-            <span class="price sale">$12.49</span>
-            <!-- Кнопка "Добавить в корзину" -->
+            <h6>Кружка с птичками</h6>
+            <span class="price sale">3000 руб.</span>
             <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
           </div>
         </div>
@@ -94,9 +86,8 @@
         <div class="product thumbnail">
           <a href="#"><img src="media/2.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
           <div class="caption">
-            <h6><a href="#">Кружка</a></h6>
-            <span class="price sale">$12.49</span>
-            <!-- Кнопка "Добавить в корзину" -->
+            <h6>Кружка с цветами</h6>
+            <span class="price sale">3500 руб.</span>
             <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
           </div>
         </div>
@@ -105,8 +96,8 @@
         <div class="product thumbnail">
           <a href="#"><img src="media/3.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
           <div class="caption">
-            <h6><a href="#">Кружка с пипой</a></h6>
-            <span class="price sale">$12.49</span>
+            <h6>Кружка сердечко</h6>
+            <span class="price sale">3000 руб.</span>
             <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
           </div>
         </div>
@@ -116,8 +107,8 @@
         <div class="product thumbnail">
           <a href="#"><img src="media/4.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
           <div class="caption">
-            <h6><a href="#">Кружка синяя </a></h6>
-            <span class="price sale">$12.49</span>
+            <h6>Кружка розовая</h6>
+            <span class="price sale">2500 руб.</span>
             <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
           </div>
         </div>
@@ -126,8 +117,8 @@
         <div class="product thumbnail">
           <a href="#"><img src="media/5.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
           <div class="caption">
-            <h6><a href="#">Кружка прикольная</a></h6>
-            <span class="price sale">$12.49</span>
+            <h6>Кружка морская</h6>
+            <span class="price sale">2000 руб.</span>
             <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
           </div>
         </div>
@@ -136,9 +127,8 @@
         <div class="product thumbnail">
           <a href="#"><img src="media/6.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
           <div class="caption">
-            <h6><a href="#">Кружка для мужиков </a></h6>
-            <span class="price sale">$12.49</span>
-            <!-- Кнопка "Добавить в корзину" -->
+            <h6>Кружка бирюзовая</h6>
+            <span class="price sale">2500 руб.</span>
             <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
           </div>
         </div>
@@ -147,17 +137,13 @@
         <div class="product thumbnail">
           <a href="#"><img src="media/7.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
           <div class="caption">
-            <h6><a href="#">Кружка крутая</a></h6>
-            <span class="price sale">$12.49</span>
-            <!-- Кнопка "Добавить в корзину" -->
+            <h6>Кружка с уткой</h6>
+            <span class="price sale">3000 руб.</span>
             <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
           </div>
         </div>
      </div>
-    <!-- Повторить для остальных товаров... -->
-    <!-- ... -->
   </div>
-  <!-- Остальной контент страницы... -->
 </div>
 <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -170,10 +156,8 @@
     </footer>
   </div>
 
-<!-- Подключение Bootstrap JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- JavaScript логика корзины -->
 <script src="script/script.js">
 
   </script>
