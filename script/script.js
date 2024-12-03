@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Получаем информацию о товаре
         const productElement = this.closest('.product');
         const productName = productElement.querySelector('.caption h6 a').innerText;
-        const productPrice = productElement.querySelector('.price').innerText.replace('$', '');
+        const productPrice = productElement.querySelector('.price').innerText.replace('₽', '');
         const productImage = productElement.querySelector('img').getAttribute('src');
 
         // Проверяем, есть ли уже такой товар в корзине
@@ -72,18 +72,18 @@ document.addEventListener("DOMContentLoaded", function() {
               <img src="${item.image}" alt="${item.name}" width="50" class="me-2">
               <div>
                 <h6 class="mb-0">${item.name}</h6>
-                <small>$${item.price.toFixed(2)} x ${item.quantity}</small>
+                <small>${item.price.toFixed(2)} руб. x ${item.quantity}</small>
               </div>
             </div>
             <div>
-              <strong>$${itemTotal.toFixed(2)}</strong>
+              <strong>${itemTotal.toFixed(2)} руб.</strong>
               <button class="btn btn-sm btn-danger ms-2 remove-item" data-index="${index}">&times;</button>
             </div>
           `;
           cartItemsContainer.appendChild(cartItem);
         });
       }
-      document.getElementById('total-price').innerText = '$' + totalPrice.toFixed(2);
+      document.getElementById('total-price').innerText = totalPrice.toFixed(2) + 'руб.';
 
       // Добавляем обработчики для кнопок удаления товаров
       const removeButtons = document.querySelectorAll('.remove-item');
