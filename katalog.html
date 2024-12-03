@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <!-- Подключение Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <!-- Подключение Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style/katalog.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-5">
+    <div class="container-fluid">
+      <a class="navbar-brand p-3" href="#">
+        <img src="logo.png" width="200px" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="zakaz.html">Заказ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="katalog.html">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#new-section">Новинки</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stock-section">В наличии</a>
+          </li>
+        </ul>
+        <!-- Иконка корзины -->
+        <a id="cart-icon" class="nav-link position-relative" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+          <i class="bi bi-cart fs-3"></i>
+          <!-- Значок количества товаров в корзине -->
+          <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Модальное окно корзины -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Корзина</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <div id="cart-items">
+            <!-- Здесь будут отображаться товары из корзины -->
+          </div>
+          <div class="d-flex justify-content-between mt-3">
+            <h5>Итого:</h5>
+            <h5 id="total-price">$0.00</h5>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-danger" id="checkout-btn">Оформить заказ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 pt-5">
+    <h1 class="text-center text-muted fs-2 p-5" id="new-section">Новинки</h1>
+    <div class="row">
+      <!-- Пример товара -->
+      <div class="col-xs-6 col-md-4">
+        <div class="product thumbnail">
+          <a href="#"><img src="media/1.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
+          <div class="caption">
+            <h6><a href="#">Кружка главная </a></h6>
+            <span class="price sale">$12.49</span>
+            <!-- Кнопка "Добавить в корзину" -->
+            <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
+          </div>
+        </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+        <div class="product thumbnail">
+          <a href="#"><img src="media/2.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
+          <div class="caption">
+            <h6><a href="#">Кружка</a></h6>
+            <span class="price sale">$12.49</span>
+            <!-- Кнопка "Добавить в корзину" -->
+            <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
+          </div>
+        </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+        <div class="product thumbnail">
+          <a href="#"><img src="media/3.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
+          <div class="caption">
+            <h6><a href="#">Кружка с пипой</a></h6>
+            <span class="price sale">$12.49</span>
+            <!-- Кнопка "Добавить в корзину" -->
+            <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
+          </div>
+        </div>
+     </div>
+     <h1 class="text-center text-muted fs-2 p-5" id="stock-section">В наличии</h1>
+     <div class="col-xs-6 col-md-4">
+        <div class="product thumbnail">
+          <a href="#"><img src="media/4.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
+          <div class="caption">
+            <h6><a href="#">Кружка синяя </a></h6>
+            <span class="price sale">$12.49</span>
+            <!-- Кнопка "Добавить в корзину" -->
+            <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
+          </div>
+        </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+        <div class="product thumbnail">
+          <a href="#"><img src="media/5.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
+          <div class="caption">
+            <h6><a href="#">Кружка прикольная</a></h6>
+            <span class="price sale">$12.49</span>
+            <!-- Кнопка "Добавить в корзину" -->
+            <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
+          </div>
+        </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+        <div class="product thumbnail">
+          <a href="#"><img src="media/6.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
+          <div class="caption">
+            <h6><a href="#">Кружка для мужиков </a></h6>
+            <span class="price sale">$12.49</span>
+            <!-- Кнопка "Добавить в корзину" -->
+            <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
+          </div>
+        </div>
+     </div>
+     <div class="col-xs-6 col-md-4">
+        <div class="product thumbnail">
+          <a href="#"><img src="media/7.jpg" class="img-thumbnail" alt="Short Sleeve T-Shirt"></a>
+          <div class="caption">
+            <h6><a href="#">Кружка крутая</a></h6>
+            <span class="price sale">$12.49</span>
+            <!-- Кнопка "Добавить в корзину" -->
+            <button class="btn btn-danger mt-2 add-to-cart">Добавить в корзину</button>
+          </div>
+        </div>
+     </div>
+    <!-- Повторить для остальных товаров... -->
+    <!-- ... -->
+  </div>
+  <!-- Остальной контент страницы... -->
+</div>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Juliana Adams</span>
+      </div>
+    </footer>
+  </div>
+
+<!-- Подключение Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript логика корзины -->
+<script src="script/script.js">
+
+  </script>
+</body>
+</html>

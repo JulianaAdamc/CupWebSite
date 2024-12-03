@@ -1,0 +1,70 @@
+/* Общие стили */
+
+.container-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Радио-кнопки */
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+legend {
+    font-size: 14px;
+    color: #333;
+}
+label input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Кнопка отправки */
+button {
+    background: #0078D7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005BB5;
+}

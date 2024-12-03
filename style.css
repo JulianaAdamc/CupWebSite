@@ -1,0 +1,54 @@
+/* Цветовые блоки */
+.bg-pink {
+    margin: 0;
+    background-color: #ffffff;
+  }
+
+/* Подгонка логотипа */
+  .item {
+    height:20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto
+  }
+/* Стили навигации */
+.nav-link {
+    color: grey;
+    font-weight: regular;
+    transition: 0.3s;
+}
+/* Футер */
+footer p {
+    margin: 0;
+    background-color: #b2b2b2;
+}
+/* текст */
+.text1 {
+    font-size: 30pt
+}
+
+/* Сверху */
+nav {
+    background: #f4f4f4;
+    padding: 10px 20px;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #0078D7;
+}

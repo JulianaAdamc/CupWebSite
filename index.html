@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <!-- Подключение Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand p-3" href="#">
+            <img src="logo.png" width="200px" alt="logo">
+        </a>
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Главная </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zakaz.html">Заказ</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="katalog.html">Каталог</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid d-flex justify-content-center mt-5 p-4">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-4">
+            <p class="fs-1">Чашка</p>
+            <p class="fs-3">Бренд изготавливающий вручную изделия из керамики. Мы предлагаем большой ассортимент изделий на любой вкус, а также готовы работать с индивидуальными заказами. </p>
+            <p><a class="btn btn-danger" href="katalog.html" role="button">Каталог</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="media/чашки.jpg" alt="Фото" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Juliana Adams</span>
+          </div>
+        </footer>
+      </div>
+<!-- Подключение Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
